@@ -6,7 +6,6 @@ import WriteTem
 import ReadTem
 import MySql
 import pdb
-
 if __name__ == '__main__':
 	while 1:
 		tem=ReadTem.ReadTem()
@@ -16,5 +15,5 @@ if __name__ == '__main__':
 			pdb.set_trace()
 			print "write data to server error!"
 		WriteTem.WriteTem(tem[0],tem[1],tem[2])
-		time.sleep(1000)		
+#		time.sleep(0.5)		
 			 		
